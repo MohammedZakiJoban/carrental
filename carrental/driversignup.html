@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Driver Sign up</title>
+<meta charset="UTF-8">
+<script src="angular.min.js"></script>
+<script type="text/javascript" src="sjja.js">
+
+</script>
+<link rel="stylesheet" type="text/css" href="sja.css"> 
+
+
+
+</head>
+<body>
+  
+  
+
+
+
+    
+    <div class="head_div">
+    
+        <!--<div class="logo">
+          <img style="width:200px; padding-left:30px;" src=""/>
+        </div> -->
+             
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="index.html">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="cars.html">Cars</a></li>	
+                    <li><a href="contact.html">Contact</a></li>	
+                    <li class="menu-has-children"><a href="">Languages</a></li>	
+                                         
+                </ul>
+        </nav>
+        <!-- #nav-menu-container -->	
+            		
+          
+    </div>
+    
+    	
+    <div class="header" >  
+        <h1>YOUR CHOICE OF CARS ON ONE CLICK!</h1>
+        <p><bold>Choose and rent from thousands of cars wherever you are.</bold></p>
+        
+    <img src="shrooog.png" width="400" height="128">
+      
+    </div>
+
+
+    <form action = "driversignup.php" method  = "POST"> 
+        <h1><center> Driver signup</center></h1>
+
+        <h3>Please fill the required field</h3>
+
+    <label>Username       *</label>
+    <input type = "text" name ='username' placeholder="Username" required>
+    <label>First name        *</label>
+    <input type = "text" name ='First_name' placeholder="First name" required>
+    <label>Last name       *</label>
+    <input type = "text" name ='Last_name' placeholder="Last name" required>
+    <label>Licence       *</label>
+    <input type = "text" name ='licence' placeholder="licence" required>
+    <label>Email       *</label>
+    <input type = "text" name ='Email' placeholder="Email" required>
+    <label>Password       *</label>
+    <input type = "password" id = 'password'  name ='password' placeholder="password" required>
+    <label>RE-enter Password       *</label>
+    <input type = "password" id = 'confirm_password' name ='confirm_password' placeholder="RE-enter Password" required>
+    
+    <label>Address       *</label>
+    <input type = "text"   name ='Address' placeholder="address" required>
+    <label>phone       *</label>
+    <input type = "text"   name ='phone' placeholder="phone" required>
+    <input type="submit" value="Sign up">
+
+
+
+    </form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+   
+    <footer>
+
+    
+      <div class="footer2">
+          <p class="foot">
+            
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved made by <a href="https://Smaher.com" target="_blank">Smaher Balatif</a>
+  
+          </p>
+      </div>
+    </footer>
+      
+    
+  
+    
+ 
+      
+    
+
+
+</body>
+<script>
+var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+</script>
+</html>

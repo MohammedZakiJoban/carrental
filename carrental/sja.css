@@ -1,0 +1,567 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form_border {
+  position: relative;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  float: right;
+  width: 445px;
+}
+.form_border {
+  position: relative;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  float: right;
+  width: 445px;
+}
+
+/* Style the top navigation bar */
+.head_div {
+  overflow: hidden;
+  background-color: #333;
+  height:70px;
+}
+
+.nav-menu li {
+  display: inline;
+}
+
+.nav-menu a {
+  padding:6px 10px;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-weight: 400;
+  font-weight:bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+   
+}
+
+#nav-menu-container {
+  margin: 0;
+  float: right;
+  padding-right: 60px;
+  padding-top: 20px;  
+}
+
+/* Style the content */
+.header {
+  text-align: center;
+  background-image: url("sam.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment: fixed;  
+  background-size: cover;
+  padding: 50px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+.header p {
+  color: #fff;
+
+}
+
+.header h1 {
+  
+  font-size: 50px;
+}
+
+
+.sign a {
+  padding:6px 10px;
+  text-decoration: none;
+  display: inline-block;
+  color:black;
+  font-weight: 400;
+  font-weight:bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  outline: none;
+  
+  
+}
+.sign li {
+  display: inline;
+  
+}
+
+
+.con {
+
+  background-color: lightgreye;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+.about {
+  
+  height: 300px; 
+  padding:10px 14px;
+}
+.about p {
+  font-size: 25px;
+}
+.about img{
+  float: right;
+  height: 400px;
+
+}
+/* Style the footer */
+.footer {
+  background-color:   #333;
+  padding: 10px;
+  bottom: 0;
+  position: relative;
+  
+
+}
+
+.footer2 {
+  background-color:   #333;
+  padding: 10px;
+  bottom: -720px;
+  position: relative;
+}
+.foot{
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+}
+/* boook */
+.book {
+  background-color: #ddd;
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -6px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  
+  padding: 5px 20px 15px 20px;
+  
+  border-radius: 3px;
+}
+.container p{
+  font-size: 24px;
+  color: blue;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0px;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 200px;
+  border-radius:3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.btn:hover {
+  background-color: #333;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+/*------------------------------------------page2--------------------------------------------------------
+-------------------------------------------------------------------------------------------------------*/
+.contact {
+  background-color: #ddd;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: gray;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: blue;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  
+  padding: 50px;
+}
+
+/*------------------------------------------page3--------------------------------------------------------
+-------------------------------------------------------------------------------------------------------*/
+.login{
+
+  height: 600px;
+  background-color: #ddd;
+}
+
+form{
+  height: 300px;
+  padding: 50px;
+}
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: gray;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  height: 300px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/*------------------------------------------page4--------------------------------------------------------
+-------------------------------------------------------------------------------------------------------*/
+.signup{
+  height: 800px;
+  background-color: #ddd;
+}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+/* Set a style for all buttons */
+button {
+  background-color:gray;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.uk-section {
+  background-color: #666
+}
+.owl-carousel {
+  position: relative;
+  margin-top: 30px;
+}
+.owl-nav {
+  position: absolute;
+  top: -60px;
+  left: 10px;
+}
+.uk-card-primary {
+  border-radius: 8px;
+}
+h3 {
+  margin-top: 10px
+}
+.uk-card > :last-child {
+  margin-top:0;
+  margin-bottom: 10px
+}
+p {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.owl-next {
+  background: #3286f0;
+}
+.owl-theme .owl-nav [class*='owl-'] {
+  background: #383838;
+}
+.owl-dots {
+  margin-top: 30px;
+}
+.uk-card-title {
+  padding-bottom: 20px
+}
+.product-grid{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  
+  
+}
+
+.hr{
+  width: 300px;
+  border: 3px solid #434444;
+}
+.containers{
+  padding-top : 50px;
+}
+.image{
+  position: relative;
+  border: 20px solid #555;
+  width: 20%;
+  height: 20%;
+}
+.buy{
+  background-color:firebrick ;
+  color: firebrick;
+  border-radius: 1;
+  border: 20px solid firebrick;
+  width: 100%;
+  margin-top: 20px;
+}
+.buy:hover{
+  background-color: firebrick;
+  
+
+}

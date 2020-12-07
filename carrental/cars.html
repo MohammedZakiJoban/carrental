@@ -1,0 +1,150 @@
+
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<script src="angular.min.js">
+    
+</script>
+<script type="text/javascript" src="sjja.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+ ></script>
+<link rel="stylesheet" type="text/css" href="sja.css"> 
+
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    .container{
+        width: 100%;
+        margin-top: 10%;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+    }
+.container img{
+    height: 250px;
+    width:250px;
+    border: 10px;
+}
+.row{
+    width: 100%;
+}
+</style>
+
+
+</head>
+<body>
+  
+  
+
+    
+    <div class="head_div">
+    
+        <!--<div class="logo">
+          <img style="width:200px; padding-left:30px;" src=""/>
+        </div> -->
+             
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="index.html">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="cars.html">Cars</a></li>	
+                    <li><a href="contact.html">Contact</a></li>	
+                    <li class="menu-has-children"><a href="">Languages</a></li>	
+                                         
+                </ul>
+        </nav>
+        <!-- #nav-menu-container -->	
+            		
+          
+    </div>
+    
+    	
+
+  
+
+    
+      
+    <div class = "container">
+        <h2> Cars  </h2>
+     
+        <ul id = "yourID" style="list-style: none;" class = "row">
+            
+
+           
+            
+                    
+           
+
+        </ul>
+    
+    
+          
+    
+</div>
+ 
+
+   
+        
+        
+   
+  
+    
+
+<footer>
+
+    
+    <div class="footer">
+        <p class="foot">
+          
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved made by <a href="https://Smaher.com" target="_blank">Smaher Balatif</a>
+
+        </p>
+    </div>
+  </footer>
+      
+
+
+</body>
+
+
+
+<script>
+    $('document').ready(function () { 
+       
+$.ajax({
+    type: "GET",
+    url: 'getcars.php',
+    dataType: 'json',
+    success: function(data){
+
+        $.each(data, function(key, value){
+            ID = value.car_id;
+		    type = value.type;
+            brand = value.brand;
+            model = value.model;
+            available_cars =value.available_cars;
+            price_per_day = value.price_per_day;
+            image = value.image;
+            
+								
+        $('#yourID').append("<li><div class = 'col-md-3'><div class = 'product-top'>"
+        +"<h4>"+brand+"</h4><img src='"+image+"' alt=''><button type='butto'  class ='btn btn-secondary'  title= '"+brand+"' >"
+        +"Rent</button></div><div class = 'product-bottom text-center'><h4>"+model+"</h4><h6>"+price_per_day+"</h6></div></li>" );
+
+    });
+
+                                         
+
+                           
+    }
+});
+
+
+
+
+    });
+</script>
+</html>

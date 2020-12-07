@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Car rental </title>
+<meta charset="UTF-8">
+<script src="angular.min.js"></script>
+<script type="text/javascript" src="sjja.js">
+
+
+</script>
+
+<script defer src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="sja.css"> 
+
+
+
+</head>
+<body>
+  
+  
+
+    
+    <div class="head_div">
+    
+        <!--<div class="logo">
+          <img style="width:200px; padding-left:30px;" src=""/>
+        </div> -->
+             
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="index.html">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="cars.php">Cars</a></li>	
+                    <li><a href="contact.html">Contact</a></li>	
+                    <li class="menu-has-children"><a href="">Languages</a></li>	
+                                         
+                </ul>
+        </nav>
+        <!-- #nav-menu-container -->	
+            		
+          
+    </div>
+    
+    	
+    <div class="header" >  
+        <h1>YOUR CHOICE OF CARS ON ONE CLICK!</h1>
+        <p><bold>Choose and rent from thousands of cars wherever you are.</bold></p>
+        <div class="sign-container">
+          <div class="sign">
+            <li><a data-modal-target="#modal"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></a></li>
+            <li><a data-modal-target="#modal1"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-up</button></a></li>	
+          </div>
+        </div>
+    <img src="shrooog.png" width="400" height="128">
+      
+    </div>
+  
+    <div class="book">
+      <div class="row">
+        <div class="col-75">
+          <div class="container">
+        
+            <h1>Book Your Car NOW!</h1>
+            <form action="/action_page.php">
+              <label for="fname"><i class="fa fa-user"></i> FULL NAME:</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your Name">
+              <label for="email"><i class="fa fa-envelope"></i> EMAIL ADDRESS:</label>
+              <input type="text" id="email" name="email" placeholder="Your Email" >
+              <label for="fname">PHONE NUMBER:</label>
+              <input type="text" id="cname" name="cardname" placeholder="Your Phone Number" >
+              <label for="cname">CHOOSE CAR:</label>
+              <div class="custom-select" style="width:200px;">
+                <select>
+                  <option value="0">Select Car:</option>
+                  <option value="1">Audi</option>
+                  <option value="2">BMW</option>
+                  <option value="3">Citroen</option>
+                  <option value="4">Ford</option>
+                  <option value="5">Honda</option>
+                  <option value="6">Jaguar</option>
+                  <option value="7">Land Rover</option>
+                  <option value="8">Mercedes</option>
+                  <option value="9">Mini</option>
+                  <option value="10">Nissan</option>
+                  <option value="11">Toyota</option>
+                  <option value="12">Volvo</option>
+                </select>
+              </div>
+              <div class="row">
+               <div class="col-50">
+                  
+                  <label for="adr"><i class="fa fa-address-card-o"></i>PICK-UP DATE:</label>
+                  <input type="date" id="adr" name="address" placeholder="Pick-Up Date">
+                  
+               </div>
+      
+               <div class="col-50">
+                  
+                  <label for="expmonth">RETURN DATE:</label>
+                  <input type="date" id="expmonth" name="expmonth" placeholder="Return Date">
+      
+               </div>
+      
+             </div>
+              Choose a car with a driver: <input type="checkbox" id="myCheck" onclick="myFunction()">
+              <h3><p id="text" style="display:none">A car with a driver was chosen.</p></h3><br>
+              <input type="submit" value="BOOK NOW" class="btn">
+            </form>
+          </div>
+        </div>
+      
+        
+      </div>							
+    </div>
+    
+      
+    <div id = "about" class="con">
+      <div class="about">
+        <img src="selwan.jpg" width="400" height="400">
+        <br>
+        <br>
+        <br>
+          
+        <h1>About us</h1>
+        <p>
+          In our site, we work to provide the best services to our customers.. <br>
+          by facilitating the reservation mechanism <br> 
+          and ensuring the availability of the car at the best prices .. <br>
+          in addition to our other services that we are working to provide ..
+        </p>
+      </div>  
+    </div>
+
+    <div class="modal " id="modal">
+      <div class="modal-header">
+        <div class="title">Login</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+   
+          <form action="login.php" method="POST">
+             
+         
+               <label for="username"><b>Username</b></label>
+               <input id = "username" type="text" placeholder="Enter Username" name="uname" required>
+           
+               <label for="password"><b>Password</b></label>
+               <input id = "password" type="password" placeholder="Enter Password" name="psw" required>
+           
+               <input id = "btn" type="submit"  name="btn" value= "Login">
+               <input id = "btn" onclick="document.getElementById('password').value = ''" class= "cancel" value = "Clear">
+               <span class="psw">Login as  <a href="AdminLogin.html">Admin</a></span>
+             
+           
+             <div class="container" >
+               
+               
+             </div>
+            </form>
+           
+      </div>
+    </div>
+    <div class="modal " id="modal1">
+      <div class="modal-header">
+        <div class="title">Registration</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+   
+          <label>Customer Registration</label>
+          <a href = "signup.html"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Customer Registration</button></a>
+          <label>Driver Registration</label>
+          <a href = "driversignup.html"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Driver Registration</button></a>
+  
+           
+      </div>
+    </div>
+  
+    <div id="overlay"></div>
+  
+    
+    <footer>
+
+    
+    <div class="footer">
+        <p class="foot">
+          
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved made by <a href="https://Smaher.com" target="_blank">Smaher Balatif</a>
+
+        </p>
+    </div>
+  </footer>
+      
+    
+  
+
+</body>
+
+</html>
